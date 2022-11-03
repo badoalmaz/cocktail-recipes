@@ -1,6 +1,12 @@
 .link {
   text-decoration: none;
-  color: white;
+  color: rgb(5, 0, 0);
   font-size: 20px;
   margin: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .link {
+    color: rgb(211, 204, 204);
+  }
 }

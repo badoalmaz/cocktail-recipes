@@ -1,15 +1,27 @@
-import Head from "next/head";
-import Link from "next/link";
-import A from "../components/A";
 import MainContainer from "../components/MainContainer";
 
 const Index = () => {
   return (
-    <MainContainer keywords={"Main page"}>
-      <div>
-        <h1>Главная страница</h1>
-      </div>
-    </MainContainer>
+    <>
+      <MainContainer keywords={"Main page"}>
+        <div className="mainPage">
+          <h1>Coming Soon</h1>
+        </div>
+      </MainContainer>
+
+      <style jsx>
+        {`
+          .mainPage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-size: 7vw;
+          }
+        `}
+      </style>
+    </>
   );
 };
 

@@ -11,8 +11,8 @@ const MainContainer = ({ children, keywords }) => {
       </Head>
 
       <div className="navbar">
-        <A href={"/"} text="Главная" />
-        <A href={"/users"} text="Пользователи" />
+        <A href={"/"} text="Home Page" />
+        <A href={"/categories"} text="Categories" />
       </div>
 
       <div>{children}</div>
@@ -20,8 +20,13 @@ const MainContainer = ({ children, keywords }) => {
       <style jsx>
         {`
           .navbar {
-            background: orange;
+            background: rgb(13, 18, 27, 0.1);
             padding: 15px;
+            position: fixed;
+            width: 100vw;
+            z-index: 3;
+            display: flex;
+            justify-content: flex-end;
           }
         `}
       </style>
